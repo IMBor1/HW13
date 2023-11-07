@@ -1,6 +1,6 @@
 public class Author {
-    String firstName;
-    String secondName;
+    private String firstName;
+    private String secondName;
 
     public Author(String firstName, String secondName) {
         this.firstName = firstName;
