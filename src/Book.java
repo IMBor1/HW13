@@ -1,3 +1,4 @@
+import java.util.Objects;
 public class Book {
     private String nameBook;
     private Author author;
@@ -41,8 +42,8 @@ public class Book {
             return false;
         }
         Book book = (Book) book1;
-        return nameBook.equals(book.nameBook) &&
-                author.equals(book.author) &&
+        return Objects.equals(nameBook, book.nameBook) &&
+                Objects.equals(author, book.author) &&
                 yearPublisher == book.yearPublisher;
     }
 }

@@ -1,3 +1,4 @@
+import java.util.Objects;
 public class Author {
     private String firstName;
     private String secondName;
@@ -31,7 +32,7 @@ public class Author {
             return false;
         }
         Author author = (Author) author2;
-        return firstName.equals(author.firstName) &&
-                secondName.equals(author.secondName);
+        return Objects.equals(firstName, author.firstName) &&
+                Objects.equals(secondName, author.secondName);
     }
 }
